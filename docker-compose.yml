@@ -1,0 +1,31 @@
+version: '3'
+services:
+    #MySQL Service
+    shopifyDB:
+        image: bitnami/mariadb:latest
+        container_name: shopifyDB
+        restart: unless-stopped
+        tty: true
+        ports:
+            - "3306:3306"
+        environment:
+            MARIADB_DATABASE: shopify
+            MARIADB_MASTER_ROOT_USER: shopify
+            MARIADB_ROOT_PASSWORD: 12345678
+            SERVICE_TAGS: dev
+            SERVICE_NAME: mysql
+        volumes:
+            - shopifyDBVolume:/bitnami/mariadb/data/
+        networks:
+            - app-network
+
+#Docker Networks
+networks:
+    app-network:
+        driver: bridge
+#Volumes
+volumes:
+    shopifyDBVolume:
+        driver: local
+    mycnf:
+        driver: local

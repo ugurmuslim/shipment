@@ -1,0 +1,46 @@
+{
+  "HomePage": {
+    "heading": "This is Goods App for Shipment 🎉",
+    "learnMore": "Go to credentials and submit your authentication key 📚",
+    "startPopulatingYourApp": "Ready to go? Start populating your app with some sample products to view and test in your store.",
+    "title": "Goods",
+    "trophyAltText": "Nice work on building a Shopify app",
+    "yourAppIsReadyToExplore": "Install and start using the app."
+  },
+  "NavigationMenu": {
+    "pageName": "Page name",
+    "credentials": "Credentials"
+  },
+
+  "Auth": {
+    "Credentials": {
+      "auth_key": "Authorization Key"
+    }
+  },
+
+  "NotFound": {
+    "description": "Check the URL and try again, or use the search bar to find what you need.",
+    "heading": "There is no page at this address"
+  },
+  "PageName": {
+    "body": "Body",
+    "heading": "Heading",
+    "primaryAction": "Primary action",
+    "secondaryAction": "Secondary action",
+    "title": "Page name"
+  },
+  "ProductsCard": {
+    "description": "Sample products are created with a default title and price. You can remove them at any time.",
+    "errorCreatingProductsToast": "There was an error creating products",
+    "populateProductsButton": {
+      "one": "Populate {{count}} product",
+      "other": "Populate {{count}} products"
+    },
+    "productsCreatedToast": {
+      "one": "{{count}} product created!",
+      "other": "{{count}} products created!"
+    },
+    "title": "Product Counter",
+    "totalProductsHeading": "TOTAL PRODUCTS"
+  }
+}
